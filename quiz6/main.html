@@ -2,6 +2,7 @@
     <header>
         <title>Brennon's Website</title>
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/javascript.js"></script>
     </header>
     <body>
         <div id='headerBox'>
@@ -22,6 +23,14 @@
                     <div class="flex_item nav_bar">
                         <a href="contactme.html">Contact Me</a>
                     </div>
+                    <div class="flex_item nav_bar">
+                        <nav onmouseout="hide()">
+                            <a href="#" onmouseover="show('m1')">Settings</a> 
+                            <div id="m1" onmouseover="show('m1')">
+                                <a href="#" onclick="changeTheme()">Change Light Theme</a>
+                            </div>
+                        </nav>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -30,10 +39,8 @@
                 <h2>Home</h2>
             </div>
             <div>
-                <div>
                     <img src="images/naturelogo.gif" alt="My Profile Picture"
                     width="608" height="90">
-                </div>
             </div>
          </div>
     </body>
