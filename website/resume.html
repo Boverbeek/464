@@ -2,13 +2,14 @@
     <header>
         <title>Brennon's Website</title>
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/javascript.js"></script>
     </header>
     <body>
         <div id='headerBox'>
-            <div id='middleBox'>
+            <!-- <div>
                 <h1>Brennon's Website</h1>
-            </div>
-            <div id='middleBox'>
+            </div> -->
+            <div>
                 <nav class="flex_cont";>
                     <div class="flex_item nav_bar">
                         <a href="main.html">Home</a>
@@ -22,17 +23,25 @@
                     <div class="flex_item nav_bar">
                         <a href="contactme.html">Contact Me</a>
                     </div>
+                    <div class="flex_item nav_bar">
+                        <a href="#" onclick="changeTheme()">Light Theme</a>
+                        <!-- <nav onmouseout="hide()">
+                            <a href="#" onmouseover="show('m1')">Settings</a> 
+                            <div id="m1" onmouseover="show('m1')">
+                                <a href="#" onclick="changeTheme()">Change Light Theme</a>
+                            </div>
+                        </nav> -->
+                    </div>
                 </nav>
             </div>
         </div>
-        <table>
-            <td class="home">
-                <h2>Resume</h2>
-                <ol>
-                    <li>one</li>
-                    <li>two</li>
-                </ol>
-            </td>
-        </table>
+        <div id='middleBox'>
+            <div class="welcome-text">
+                <h1>My Resume</h1>
+            </div>
+         </div>
+         <div id='footerBox'>
+            <h3>Footer</h3>
+         </div>
     </body>
 </html>

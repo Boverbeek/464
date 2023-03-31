@@ -65,18 +65,23 @@ function hide()
 function changeTheme() {
     var header = document.querySelector('#headerBox');
     var middle = document.querySelector('#middleBox');
+    var footer = document.querySelector('#footerBox');
   
     if (lightMode) {
       // Light mode
       document.documentElement.style.background = 'black';
-      header.style.backgroundColor = 'darkgray';
+      header.style.backgroundColor = 'black';
       middle.style.backgroundColor = 'darkgray';
+      footer.style.backgroundColor = 'black';
       lightMode = false;
+      document.getElementById("ShowButton").value= "Hide Filter";
     } else {
       // Dark mode
       document.documentElement.style.background = 'white';
-      header.style.backgroundColor = "#f1f1f1";
+      header.style.backgroundColor = "#000000";
       middle.style.backgroundColor = "#f1f1f1";
+      footer.style.backgroundColor = "#000000";
       lightMode = true;
+      document.getElementById("ShowButton").value= "Hide Filter";
     }
 }

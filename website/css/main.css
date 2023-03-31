@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 10px;
+    min-width: 300px;
+    min-height: 600px;
+}
+
+div#headerBox {
+    /* border: 5px solid black;
+    margin: 5px; */
+    text-align: center;
+    background-color: black;
+    height: 70px;
+}
+
+div#homeBox {
+    background-image: url('../images/websiteBackground.png');
+    color: #f1f1f1;
+    height: 800px;
+    bottom: 200px;
+}
+
+div#middleBox {
+    background-color: #f1f1f1;
+    height: 800px;
+    bottom: 200px;
+}
+
+div#footerBox {
+    text-align: center;
+    background-color: black;
+    height: 150px;
+    color: #f1f1f1;
+}
+
+.flex_cont {
+    display: flex;
+}
+
+.flex_item {
+    flex: 1;
+}
+
+.nav_bar {
+    margin-top: 25px;
+    color: #f1f1f1;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+a:link {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+a:hover {
+    color: gray;
+}
+
+.welcome-text {
+    animation: fade-in 2s ease-out; /* Apply the fade-in animation to the welcome text */
+}
+
+/* Define the keyframes for the fade-in animation */
+@keyframes fade-in {
+    0% {
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateY(30px); /* Move the text down by 20px */
+    }
+    100% {
+    opacity: 1; /* End with 100% opacity */
+    transform: translateY(0); /* Move the text back to its original position */
+    }
+}
+
+/* Style the welcome text */
+.welcome-text h1 {
+font-size: 36px;
+font-weight: bold;
+text-align: center;
+color: #f1f1f1;
+}
+
+.Feedback { 
+    width: 450px; 
+}
+
+#m1 {
+    visibility: hidden;
+}
